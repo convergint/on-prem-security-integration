@@ -51,24 +51,7 @@ These workflows describe what we're ultimately trying to support. We don't expec
 - The integration logic fetches device inventory from the security system.
 - A normalized list is pushed to Convergint Cloud.
 
-```mermaid
----
-config:
-  theme: base
-  layout: dagre
-  look: neo
----
-flowchart LR
- subgraph subGraph0["Customer Site"]
-        SS["Security System"]
-        Adapter["Inventory Integration Logic"]
-  end
- subgraph subGraph1["Convergint Cloud"]
-        Cloud["Convergint Inventory Receiver"]
-  end
-    SS <--> Adapter
-    Adapter --> Cloud
-```
+![inventory-sync](/diagrams/inventory.svg)
 
 **2. Real-Time Health Events**
 
@@ -76,27 +59,7 @@ flowchart LR
 - Events are forwarded as they happen.
 - If real-time is unavailable, status is pulled during inventory sync.
 
-    ```mermaid
-    ---
-    config:
-      theme: base
-      look: neo
-    ---
-    sequenceDiagram
-        box Customer Site
-            participant SecuritySystem as Security System
-            participant Adapter
-        end
-        box Convergint Cloud
-            participant Cloud as Event Receiver
-        end
-
-        Adapter->>SecuritySystem: Subscribe to health events
-        SecuritySystem->>SecuritySystem: Device goes offline
-        SecuritySystem-->>Adapter: Notify device status change
-        Adapter-->>Cloud: Forward normalized event
-    ```
-
+![realtime-events](/diagrams/realtime-events.svg)
 
 ## Example Payloads
 
