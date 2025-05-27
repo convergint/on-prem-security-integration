@@ -1,5 +1,3 @@
-# A Path to On-Prem Security Integration
-
 ## Context
 
 We’re exploring faster, cleaner ways to integrate with Lenel OnGuard and Milestone on-prem systems. This doc outlines what we’re looking for and how you, as our integration partner, might already be positioned to help. We’ll walk through what we need, what’s flexible, and where we’re looking for alignment with what you’ve already built.
