@@ -1,10 +1,12 @@
 ## Context
 
-We’re exploring faster, cleaner ways to integrate with Lenel OnGuard and Milestone on-prem systems. This doc outlines what we’re looking for and how you, as our integration partner, might already be positioned to help. We’ll walk through what we need, what’s flexible, and where we’re looking for alignment with what you’ve already built.
+Convergint is exploring a strategic technology collaboration to simplify and accelerate integration with on-prem systems like Lenel OnGuard and Milestone. We're evaluating the potential of leveraging existing third-party connector libraries to improve the fragmented service experience in physical security.
+
+This document outlines what we're looking for and how you, as our integration partner, might already be positioned to help. We'll walk through what we need, what's flexible, and where we're looking for alignment with what you've already built. The goal: assess whether we can repurpose and scale proven connectors to deliver faster deployment, stronger interoperability, and differentiated value—while staying true to open integration and better security outcomes.
 
 ## Scope
 
-We’re looking for two core capabilities from your system:
+We're looking for two core capabilities from your system:
 
 1. **Asset Inventory**
     - Pull a full list of security devices for a given Convergint customer.
